@@ -1,19 +1,17 @@
 <?php
 
-$server = "localhost";
-$username = "root";
-$password = "";
-$database = "20_perpustakaan_12rpl2";
+$server ="localhost";
+$username ="root";
+$password ="";
+$db ="nabilah_perpus";
 
-$koneksi = mysqli_connect($server,$username,$password,$database);
-if(!$koneksi){
-    die("KONEKSI GAGAL <br>".mysqli_connect_erorr());
-}else{
-   // echo "KONEKSI BERHASIL";
-}
-?>
+$koneksi = mysqli_connect($server, $username, $password, $db);
 
-<?php
-date_default_timezone_set("America/New_York");
-echo date("d/m/y"). date("h:i");
+//if(!$koneksi){
+//    echo ("koneksi gagal");
+//}
+//else{
+//    echo "koneksi berhasil";
+//  }
+
 ?>
